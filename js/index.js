@@ -39,7 +39,7 @@ document.addEventListener('keyup', (event) => {
 });
 
 
-//click - stop load
+//6. click - stop load
 let stopLoad = document.querySelector('nav a');
 stopLoad.addEventListener('click', (event) => {
     console.log("Action was terminated");
@@ -47,7 +47,22 @@ stopLoad.addEventListener('click', (event) => {
 });
 
 
-//load
+//7. load
 window.addEventListener('load', () => {
     console.log('Loading was successful');
 });
+
+
+//8. resize
+function reportWindowSize() {
+    console.log(`height: ${window.innerHeight}px, width: ${window.innerWidth}px`)
+}
+window.addEventListener('resize', reportWindowSize);
+
+
+//9. wheel
+let wheel = document.querySelector('body');
+wheel.addEventListener('wheel', () => {
+    wheel.style.backgroundColor = "lightblue"
+    console.log("Wheel on mouse has been used");
+})
