@@ -37,3 +37,17 @@ document.addEventListener('keyup', (event) => {
     event.stopPropagation();
 
 });
+
+
+//click - stop load
+let stopLoad = document.querySelector('nav a');
+stopLoad.addEventListener('click', (event) => {
+    console.log("Action was terminated");
+    event.preventDefault();
+});
+
+
+//load
+window.addEventListener('load', () => {
+    console.log('Loading was successful');
+});
