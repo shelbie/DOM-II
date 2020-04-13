@@ -66,3 +66,11 @@ wheel.addEventListener('wheel', () => {
     wheel.style.backgroundColor = "lightblue"
     console.log("Wheel on mouse has been used");
 })
+
+
+//10. contextmenu
+let context = document.querySelector("body");
+context.addEventListener("contextmenu", e => {
+    console.log("Right click disabled")
+    e.preventDefault()
+})
