@@ -71,6 +71,6 @@ wheel.addEventListener('wheel', () => {
 //10. contextmenu
 let context = document.querySelector("body");
 context.addEventListener("contextmenu", e => {
-    console.log("Right click disabled")
+    alert("Right click disabled")
     e.preventDefault()
 })
